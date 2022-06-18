@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI網頁</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: url(./img/5d2fddbc63b3ed844fd9a3e308717a32_39193fcabd20cba835f71c720e97cbd2.jpg);
+      min-height: 100vh;
+      text-align: center;
+      justify-content: center;
+    }
+
+    h1{
+      text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  color:#fff;
+      line-height: 20vh;
+    }
+
+    table{
+      margin: 0 auto;
+      width: 400px;
+      height: 250px;
+    }
+    
+    td{
+      border: 2px solid #000;
+      text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  color:#fff;
+    }
+    
+    input{
+      margin: 5vh;
+      border: 2px solid #000;
+      border-radius: 50px;
+      width: 25vh;
+      height: 5vh;
+      background: transparent;
+      text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  color:#fff;
+    }
+
+    a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>BMI計算網頁</h1>
+
+    <table>
+      <tr>
+        <td></td>
+        <td>身體質量指數(BMI)<br>(kg/m²)</td>
+      </tr>
+      <tr>
+        <td>過輕</td>
+        <td>BMI ＜ 18.5</td>
+      </tr>
+      <tr>
+        <td>正常</td>
+        <td>18.5≦BMI＜24</td>
+      </tr>
+      <tr>
+        <td>異常</td>
+        <td>過重：24≦BMI＜27<br>
+          輕度肥胖：27≦BMI＜30<br>
+          中度肥胖：30≦BMI＜35<br>
+          重度肥胖：BMI≧35</td>
+      </tr>
+    </table>
+
+    <a href="getBmi.html"><input type="submit" value="START (GET)"></a>
+    <a href="postBmi.html"><input type="submit" value="START (POST)"></a>
+
+
+
+</body>
+
+</html>
