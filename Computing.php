@@ -31,6 +31,6 @@ if($bmi>=35){
 }
 
 // 導向
-header("location:Result.php?bmi=$bmi&result=$result");
+header("location:Result.html?bmi=$bmi&result=$result");
 
 ?>
