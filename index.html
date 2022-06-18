@@ -14,30 +14,41 @@
 
     body {
       background: url(./img/5d2fddbc63b3ed844fd9a3e308717a32_39193fcabd20cba835f71c720e97cbd2.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 100%;
       min-height: 100vh;
       text-align: center;
       justify-content: center;
+
     }
 
-    h1{
+    div {
+      background: hsla(0, 0%, 100%, .3);
+      height: 100vh;
+
+    }
+
+    h1 {
       text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
-  color:#fff;
+      color: #fff;
       line-height: 20vh;
     }
 
-    table{
+    table {
       margin: 0 auto;
       width: 400px;
       height: 250px;
     }
-    
-    td{
+
+    td {
       border: 2px solid #000;
       text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
-  color:#fff;
+      color: #fff;
     }
-    
-    input{
+
+    input {
       margin: 5vh;
       border: 2px solid #000;
       border-radius: 50px;
@@ -45,18 +56,20 @@
       height: 5vh;
       background: transparent;
       text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
-  color:#fff;
+      color: #fff;
     }
 
-    a{
+    a {
       text-decoration: none;
     }
   </style>
 </head>
 
 <body>
+  <div>
 
-  <h1>BMI計算網頁</h1>
+
+    <h1>BMI計算網頁</h1>
 
     <table>
       <tr>
@@ -85,6 +98,7 @@
 
 
 
+  </div>
 </body>
 
 </html>

@@ -14,9 +14,19 @@
 
     body {
       background: url(./img/5d2fddbc63b3ed844fd9a3e308717a32_39193fcabd20cba835f71c720e97cbd2.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 100%;
       min-height: 100vh;
       text-align: center;
       justify-content: center;
+    }
+
+    .bg {
+      background: hsla(0, 0%, 100%, .3);
+      height: 100vh;
+
     }
 
     h1 {
@@ -52,19 +62,22 @@
 </head>
 
 <body>
-  <h1>BMI計算</h1>
-  <h5>BMI值計算公式:　BMI = 體重(公斤) / 身高²(公尺²)</h5>
-  <form action="Computing.php" method="POST">
-    <div>
-      <label for="">身高(cm)：</label><input type="number1" name="height" value="">
-    </div>
-    <div>
-      <label for="">體重(kg)：</label><input type="number2" name="weight" value="">
-    </div>
-    <div>
-      <input class="submit" type="submit" value="送出">
-    </div>
-  </form>
+  <div class="bg">
+
+    <h1>BMI計算</h1>
+    <h5>BMI值計算公式:　BMI = 體重(公斤) / 身高²(公尺²)</h5>
+    <form action="Computing.php" method="POST">
+      <div>
+        <label for="">身高(cm)：</label><input type="number1" name="height" value="">
+      </div>
+      <div>
+        <label for="">體重(kg)：</label><input type="number2" name="weight" value="">
+      </div>
+      <div>
+        <input class="submit" type="submit" value="送出">
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
